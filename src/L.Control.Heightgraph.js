@@ -728,7 +728,7 @@ import {
                 .style("pointer-events", "all")
                 .on("mousemove.focusbox", this._mousemoveHandler.bind(this))
                 .on("mouseout.focusbox", this._mouseoutHandler.bind(this))
-            if (L.Browser.android) {
+            if (L.Browser.mobile) {
                 background.on("touchstart.drag", this._dragHandler.bind(this))
                     .on("touchstart.drag", this._dragStartHandler.bind(this))
                     .on("touchstart.focusbox", this._mousemoveHandler.bind(this));
