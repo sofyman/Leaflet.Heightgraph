@@ -729,7 +729,7 @@ import {
                 .on("mousemove.focusbox", this._mousemoveHandler.bind(this))
                 .on("mouseout.focusbox", this._mouseoutHandler.bind(this))
             if (L.Browser.mobile) {
-                background.on("touchstart.drag", this._dragHandler.bind(this))
+                background.on("touchmove.drag", this._dragHandler.bind(this))
                     .on("touchstart.drag", this._dragStartHandler.bind(this))
                     .on("touchstart.focusbox", this._mousemoveHandler.bind(this));
                 L.DomEvent.on(this._container, 'touchend', this._dragEndHandler, this);
