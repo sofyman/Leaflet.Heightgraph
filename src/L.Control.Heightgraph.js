@@ -225,7 +225,9 @@ import {
             }
             const item1 = this._findItemForX(this._dragStartCoords[0]),
                 item2 = this._findItemForX(this._dragCurrentCoords[0])
-            this._fitSection(item1, item2);
+            if (Math.abs(this._dragStartCoords[0] - this._dragCurrentCoords[0]) >= 5) {
+                this._fitSection(item1, item2);
+            }
             this._dragStartCoords = null;
             this._gotDragged = false;
         },
