@@ -227,6 +227,8 @@ import {
                 item2 = this._findItemForX(this._dragCurrentCoords[0])
             if (Math.abs(this._dragStartCoords[0] - this._dragCurrentCoords[0]) >= 5) {
                 this._fitSection(item1, item2);
+            } else {
+                this._resetDrag();
             }
             this._dragStartCoords = null;
             this._gotDragged = false;
