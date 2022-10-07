@@ -225,7 +225,7 @@ import {
             }
             const item1 = this._findItemForX(this._dragStartCoords[0]),
                 item2 = this._findItemForX(this._dragCurrentCoords[0])
-            if (Math.abs(this._dragStartCoords[0] - this._dragCurrentCoords[0]) >= 5) {
+            if (Math.abs(this._dragStartCoords[0] - this._dragCurrentCoords[0]) >= 30) {
                 this._fitSection(item1, item2);
             } else {
                 this._resetDrag();
